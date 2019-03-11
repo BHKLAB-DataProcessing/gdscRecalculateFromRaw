@@ -7,4 +7,4 @@ slice <- readRDS(myfn)
 
 res <- PharmacoGx:::.calculateFromRaw(slice)
 
-saveRDS(res, file=paste("/pfs/out/", gsub(basename, pattern = ".rds", rep="_recomp.rds", exact=TRUE))
+saveRDS(res, file=paste("/pfs/out/", gsub(basename, pattern = ".rds", replacement="_recomp.rds", fixed=TRUE))

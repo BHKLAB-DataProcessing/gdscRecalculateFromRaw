@@ -1,0 +1,10 @@
+library(PharmacoGxPrivate)
+
+myfn <- list.files("/pfs/input/")
+mybasenm <- basename(myfn)
+
+slice <- readRDS(myfn)
+
+res <- PharmacoGx:::.calculateFromRaw(slice)
+
+saveRDS(res, file=paste("/pfs/out/", gsub(basename, pattern = ".rds", rep="_recomp.rds", exact=TRUE))

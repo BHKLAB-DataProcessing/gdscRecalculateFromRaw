@@ -1,6 +1,7 @@
 library(PharmacoGxPrivate)
 
 myfn <- list.files("/pfs/input/slices/")
+print(myfn)
 # mybasenm <- basename(myfn)
 
 # slice <- readRDS(myfn)

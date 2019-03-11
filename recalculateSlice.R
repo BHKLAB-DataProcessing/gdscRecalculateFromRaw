@@ -1,6 +1,6 @@
 library(PharmacoGxPrivate)
 
-myfn <- list.files("/pfs/input/slices/")
+myfn <- list.files("/pfs/input/slices/", full.names=TRUE)
 print(myfn)
 mybasenm <- basename(myfn)
 

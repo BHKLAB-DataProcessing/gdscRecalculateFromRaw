@@ -1,4 +1,4 @@
-library(PharmacoGxPrivate)
+library(PharmacoGx)
 
 myfn <- list.files("/pfs/input/slices/", full.names=TRUE)
 print(myfn)
